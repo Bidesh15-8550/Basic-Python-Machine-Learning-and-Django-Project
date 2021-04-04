@@ -13,3 +13,18 @@ class Point:
 point = Point(10 , 20)
 point.x = 11
 print(point.x)
+
+##Person 
+class Person:
+    def __init__(self , name):
+        self.name = name
+        
+    def talk(self):
+        print(f"Hi, I am {self.name}")
+        
+        
+john = Person("John Smith")
+john.talk()
+
+bob = Person("Bob Smith")
+bob.talk()
