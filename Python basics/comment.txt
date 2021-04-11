@@ -1,1 +1,3 @@
 ctrl + / to comment out
+
+to activate virtual environment- venv\scripts\activate
