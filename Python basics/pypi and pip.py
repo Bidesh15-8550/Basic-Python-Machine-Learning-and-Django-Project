@@ -21,6 +21,7 @@ def process_workbook(filename):
         correted_price_cell = sheet.cell(row,4)
         correted_price_cell.value = correted_price
 
+
     values = Reference(sheet, 
             min_row=2, 
             max_row=sheet.max_row,
