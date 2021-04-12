@@ -1,0 +1,10 @@
+when it turns to blue(press on green or press ESC), press A to add row above and B to below
+
+press H to see shortcuts and instructions
+
+if you dont want row press D twice to delete
+
+if u type df. then tab u can see what methoud are included in it
+After selecting methods if u press on the method and press shift+ TAB u can see the details about what the methods do.
+
+To comment anything press Ctrl+/
