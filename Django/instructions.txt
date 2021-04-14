@@ -1,0 +1,12 @@
+First go to terminal and install in venv- pip install django
+
+to create a new project- django-admin startproject pyshop .
+						(project name)
+
+to run server- python manage.py runserver
+
+
+to create other sections- python manage.py startapp products(It will create a folder namaed products)
+
+__init__ if contain in any folder its a package
+
