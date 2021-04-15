@@ -10,3 +10,28 @@ to create other sections- python manage.py startapp products(It will create a fo
 
 __init__ if contain in any folder its a package
 
+
+I have to go to settings inside the pyshop and add the class for which i want to make a database
+here for productsconfig from apps.py i added 'products.apps.ProductsConfig' in the settings
+
+to make migrations- python manage.py makemigrations (to create the migrate)
+
+now use - python manage.py migrate (to migrate)
+
+now drag and drop in sqlite to see the database
+
+if i goto the server and use /admin then it will reditect to admin page, its created by default
+
+##to create superuser type- python manage.py createsuperuser (by giving username,email and pass)
+
+to add more columns in admin panel go to the folder and admin file of which u want to add.
+Like- there are group and user in admin panel and you want to add product. So go to product folder and edit admin.py
+then write this codes,   from django.contrib import admin
+			 from .models import Product
+
+			 admin.site.register(Product)
+
+
+
+
+
