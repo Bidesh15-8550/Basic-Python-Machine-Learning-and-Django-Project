@@ -31,6 +31,8 @@ then write this codes,   from django.contrib import admin
 
 			 admin.site.register(Product)
 
+"terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"],
+
 
 
 
