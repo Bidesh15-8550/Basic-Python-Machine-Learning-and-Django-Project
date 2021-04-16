@@ -33,6 +33,21 @@ then write this codes,   from django.contrib import admin
 
 "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"],
 
+Template tag- (After creating a template folder inside the products folder(index.html))
+<h1>Products</h1>
+<ul>
+    {% %}
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<h1>Products</h1>
+<ul>
+    {% for product in products %}
+        <li>{{ product.name }} (${{ product.price }})</li>
+    {% endfor %}
+</ul>
+
 
 
 
