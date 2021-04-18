@@ -65,6 +65,15 @@ now go to index.html again and extend the base.html-
     </ul>
 {% endblock %}
 
+For changing templates location goto pyshop and then settings.
+Search for templates in link 55
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'],
+        'APP_DIRS': True,
+
 
 
 
