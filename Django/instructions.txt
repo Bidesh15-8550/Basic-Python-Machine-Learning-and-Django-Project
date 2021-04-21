@@ -74,6 +74,8 @@ TEMPLATES = [
         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
 
+To install heroku- pip install gunicorn django-heroku
+
 
 
 
