@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple checkbox</title>
+    <script>
+        function getvalues(){
+            var selected = new Array();
+            var chkbox = document.getElementById("tab1");
+            var selchk= chkbox.getElementsByTagName("input");
+            for(var i=0;i<selchk.length;i++)
+            {
+                if(selchk[i].checked)
+                {
+                    selected.push(selchk[i].value);
+                }
+            }
+            if(selected.length>0)
+            {
+                document.getElementById("displayvalues").innerHTML = selected;
+            }
+        };
+    </script>
     
 </head>
 <body>
@@ -12,10 +30,19 @@
     <h1>Get/Display Multiple selected checkbox values using JS</h1>
     <h3>Django Python Web</h3>
     <hr>
-    {% for resultdisplay in colornames %}
-    <input type="checkbox" value="{{resultdisplay.colorname}}">{{resultdisplay.colorname}}
-    {% endfor %}
+    <table id="tab1">
     
+        <tr>
+            <td>
+                {% for resultdisplay in colornames %}
+                <input type="checkbox" value="{{resultdisplay.colorname}}">{{resultdisplay.colorname}}
+                {% endfor %}
+            </td>
+        </tr>
+    
+    </table>
+    <input id="but1" type="button" value="Display Record" onclick="getvalues()">
+    <b id="displayvalues"></b>
     </center>
     
 </body>
